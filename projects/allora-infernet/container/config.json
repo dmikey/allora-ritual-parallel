@@ -25,7 +25,7 @@
   "forward_stats": true,
   "containers": [
     {
-      "id": "allora-infernet",
+      "id": "allora-index-price",
       "image": "allora-infernet:latest",
       "external": true,
       "port": "3000",
@@ -33,7 +33,9 @@
       "allowed_addresses": [],
       "allowed_ips": [],
       "command": "--bind=0.0.0.0:3000 --workers=2",
-      "env": {}
+      "env": {
+        "UPSHOT_API_TOKEN":"UP-a6128901c19c48a7a79b3d60"
+      }
     },
     {
       "id": "anvil-node",
